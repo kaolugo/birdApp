@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta name = "description" content = "This is the testing site for the Bird App, a twitter clone">
+        <link rel = "stylesheet" type = "text/css" href = "style.css?v=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <title>The Bird App</title>
+    </head>
+
+    <body>
+        <div class = "everything">
+
+            
+            <div id = "editScreen" style = "display: none;"></div>
+            
+
+            <h1>The Bird App (•ө•)</h1>
+            
+            <hr id = "yellowLine">
+
+            <div class = "edits">
+                <div class = "you">
+                    <h2 class = "test">You</h2>
+                    <h3>Jossy</h3>
+                </div>
+
+                <div class = "newUser">
+                    <h2>Create User</h2>
+                    <form onsubmit = "createUser()">
+                        <input type = "text" placeholder = "Name" id = "inputName">
+                        <input class = "create" type = "submit" value = "create">
+                    </form>
+                </div>
+
+                <div class = "newTweet">
+                    <h2>Tweet</h2>
+                    <form onsubmit = "createTweet()">
+                        <input type = "text" placeholder = "What do you wanna say ??" id = "inputContent">
+                        <input type = "text" placeholder = "Insert userID here" id = "inputID">
+
+                        <input class = "create" type = "submit" value = "post">
+                    </form>
+                </div>
+            </div>
+
+            <hr id = "greyLine">
+
+            <div class = "feeds">
+                <div class = "users">
+                    <h4>Users</h4>
+                    <div id = "uFeed">
+                    </div>
+                </div>
+        
+                <div class = "personal">
+                    <h4>Personal Timeline</h4>
+                    <div id = "pFeed">
+                    </div>
+                </div>
+        
+                <div class = "global">
+                    <h4>Global Timeline</h4>
+                    <div id = "gFeed">
+                    </div>
+                </div>
+        
+            </div>
+
+        </div>
+        
+
+        <script type = "text/javascript" src = "script.js?v=1"></script>
+        <script>
+            userRoster();
+            globalFeed();
+            personalFeed();
+        </script>
+    </body>
+</html>

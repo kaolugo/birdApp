@@ -1,0 +1,329 @@
+/*
+body {
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+/* header styling */
+h1 {
+    /* flexbox thingies */
+    display: flex;
+    margin-left: 150px;
+
+    font-family: 'Poppins';
+    font-size: 60px;
+
+    color: #FF4500;
+}
+
+/* line */
+#yellowLine {
+    border: 2px solid #FFD600;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* first area */
+.edits {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 35px;
+}
+
+.newUser h2, .newTweet h2, .personal h4, .global h4 {
+    color: #5C5C5C;
+}
+
+.you h2, .users h4 {
+    color: #FF4500;
+}
+
+.you{
+    /* makes it look like the boxes are left justified */
+    /* but in reality they thick asf*/
+    margin-right: 150px;
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    */
+}
+
+.newUser, .newTweet {
+    flex-direction: column;
+    display: flex;
+}
+
+.newUser form, .newTweet form, .deleteForm  {
+    flex-direction: column;
+    display: flex;
+}
+
+h3 {
+    /* jossy name styling */
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #5C5C5C;
+}
+
+/* input field styling */
+.newUser input[type = text], .newTweet input[type = text] {
+    width: 350px;
+    font-size: 25px;
+    font-family: 'Poppins';
+}
+
+
+::placeholder {
+    color: #C1C1C1;
+}
+
+
+/* submit button styling */
+/*
+input[type = submit] {
+    background: none;
+    border: none;
+    color: #00C2FF;
+
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 25px;
+
+    margin-top: 5px;
+}
+*/
+
+.create {
+    align-self: flex-end;
+
+    background: none;
+    border: none;
+    color: #00C2FF;
+
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 25px;
+
+    margin-top: 5px;
+}
+
+
+/* second half styling */
+#greyLine {
+    border: 2px solid #D8D8D8;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.feeds {
+    margin-left: 150px;
+    margin-right: 150px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#pFeed, #gFeed {
+    display: inline-block;
+
+    height: 28vh;
+    overflow-y: scroll;
+
+    width: 25vw;
+}
+
+#uFeed {
+    display: infline-block;
+    height: 28vh;
+    overflow-y: scroll;
+}
+
+/*
+#pFeed, #gFeed {
+    flex-grow: 2;
+}
+
+#userList {
+    flex-grow: 1;
+}
+*/
+
+
+h4 {
+    font-family: 'Poppins';
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+/* tweet card styling */
+#tweetCard {
+    background-color: #F1F1F1;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#crudButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editButton {
+    background: none;
+    border: none;
+    color: #00C2FF;
+
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: black;
+
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+.followButton {
+    background: none;
+    border: none;
+    color: #8F8F8F;
+
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 12px;
+
+    padding: 0;
+}
+
+#tweetName, #tweetContent {
+    font-family: 'Poppins';
+    color: #FF4500;
+}
+
+#tweetName {
+    font-size: 20px;
+}
+
+#tweetContent {
+    font-size: 12px;
+}
+
+#userCard {
+    margin-bottom: 20px;
+}
+
+#userName, #userID {
+    font-family: 'Poppins';
+}
+
+#userName {
+    color: #5C5C5C;
+    font-size: 20px;
+}
+
+#userID {
+    color: #00C2FF;
+    font-size: 10px;
+}
+
+
+/* edit screen styling */
+#editScreen {
+    z-index: 100;
+
+    position: absolute;
+
+    width: 30vw;
+    height: 30vh;
+
+    top: 25%;
+    left: 30%;
+}
+
+.editCard {
+    width: 100%;
+    height: 100%;
+
+    background-color: #FF4500;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+h6 {
+    font-family: Poppins;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+
+.editForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.editForm textarea {
+    font-family: Poppins;
+    font-size: 20px;
+
+    color: #5C5C5C;
+}
+
+.editForm input[type = submit] {
+    background: none;
+    border: none;
+    color: white;
+
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.everything {
+    position: relative;
+}
+
+.test2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: red;
+
+    z-index: 10;
+}
+
+
+
+
